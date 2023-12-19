@@ -1,0 +1,59 @@
+.slider{
+    height: calc(100vh - 80px);
+    width: 100vw;
+    margin-top: 10vh;
+    position: relative;
+    overflow: hidden;
+
+    .container{
+        width: 300vw;
+        height: 100%;
+        display: flex;
+        transition: all 1.5s ease;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .icons{
+        width: fit-content;
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 45vh;
+        gap: 90vw;
+        margin: auto;
+
+        .icon{
+            background: rgb(255, 255, 255, 0.7);
+            width: 2.7vw;
+            height: 5vh;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            
+
+            .arrow{
+                color: rgb(0, 0, 0);
+            }
+        }
+
+        .icon:hover{
+            background: rgb(255, 255, 255, 0.5);
+            transition: 1.3s;
+            width: 2.6vw;
+            height: 4.9vh;
+        }
+
+        .icon:not(:hover){
+            transition: 1.3s;
+        }
+    }
+}

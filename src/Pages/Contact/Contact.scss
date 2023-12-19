@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.Contact{
+    width: 100%;
+    background: #d6d6d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../../../img/c1.jpg);
+    background-attachment: cover;
+    background-size: cover;
+
+    .Name{
+        margin-top: 20vh;  
+        margin-bottom: 5vh; 
+        font-size: 2em;
+        color: #fff;
+    }
+
+    hr{
+        width: 30vw;
+        border: 3px solid #fff;
+    }
+
+    .text{
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+        color: #fff;
+    }
+
+    .maps{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .first_maps, .second_maps{
+            width: 40%;
+            height: 100%;
+
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .contact_box{
+        margin-top: 10vh;
+        margin-bottom: 15vh;
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        justify-content: space-around;
+
+        .phone,.gmail,.adress{
+            width: 25%;
+            height: 100%;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .icon{
+                width: 31%;
+                height: 34%;
+            }
+
+        }
+
+        .phone{
+            .icon{
+                background-image: url(../../../../img/phone.png);
+                background-attachment: cover;
+                background-size: 100%;
+            }
+
+            span{
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 2em;
+                }
+            }
+        }
+
+        .phone:hover{
+            border-radius: 12%;
+            -webkit-box-shadow: 18px 18px 8px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 18px 18px 8px 0px rgba(0,0,0,0.75);
+            box-shadow: 18px 18px 8px 0px rgba(0,0,0,0.75);
+            transition: 1s;
+        }
+
+        .phone:not(:hover){
+            transition: 1s;
+        }
+
+        .gmail{
+            .icon{
+                background-image: url(../../../../img/gmail.png);
+                background-attachment: cover;
+                background-size: 100%;
+            }
+            span{
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 2em;
+                }
+            }
+        }
+
+        .gmail:hover{
+            border-radius: 12%;
+            -webkit-box-shadow: 18px 18px 8px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 18px 18px 8px 0px rgba(0,0,0,0.75);
+            box-shadow: 18px 18px 8px 0px rgba(0,0,0,0.75);
+            transition: 1s;
+        }
+
+        .gmail:not(:hover){
+            transition: 1s;
+        }
+
+        .adress{
+            .icon{
+                background-image: url(../../../../img/maps.png);
+                background-attachment: cover;
+                background-size: 100%;
+            }
+            p{
+                text-align: center;
+                font-size: 1.5em;
+            }
+        }
+
+        .adress:hover{
+            border-radius: 12%;
+            -webkit-box-shadow: 18px 18px 8px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 18px 18px 8px 0px rgba(0,0,0,0.75);
+            box-shadow: 18px 18px 8px 0px rgba(0,0,0,0.75);
+            transition: 1s;
+        }
+
+        .adress:not(:hover){
+            transition: 1s;
+        }
+    }
+}
